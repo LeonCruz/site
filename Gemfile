@@ -17,7 +17,6 @@ gem 'bcrypt', '~> 3.1'
 
 group :development do
   gem "solargraph", "~> 0.40.3"
-  gem "faker", "~> 2.16.0"
 end
 
 group :development, :test do
@@ -27,5 +26,9 @@ group :development, :test do
   gem 'rspec', '~> 3.10'
   gem 'rubocop', '~> 1.9'
   gem "factory_bot", "~> 6.1"
+end
+
+group :test do
+  gem "faker", "~> 2.16.0"
 end
 
