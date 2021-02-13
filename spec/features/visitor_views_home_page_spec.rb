@@ -18,24 +18,12 @@ feature 'Visitor view home page' do
   end
   
   scenario 'must contain courses' do
-    @user = User.create(
-                        name: 'Eliana Santos',
-                        email: 'eliana@git.com',
-                        password: '123456', 
-                        photo: 'http://storage//eliana.jpg'
-                      )
-
-    @course = Course.create(
-                            name: 'Criando Sites Com Ruby',
-                            description: 'lorem ipsum',
-                            video_id: '129812812',
-                            source_code: 'http://storage//file.zip',
-                            user: @user,
-                          )
+    user = create(:user)
+    course = create(:course, user: user)
 
     visit '/'
 
-    expect(page).to have_content(@user.name)
-    expect(page).to have_content(@course.name)
+    expect(page).to have_content(user.name)
+    expect(page).to have_content(course.name)
   end
 end
