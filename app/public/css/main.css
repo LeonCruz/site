@@ -1,0 +1,194 @@
+* {
+  background-color: none !important;
+  font-family     : 'Noto Sans', sans-serif !important;
+}
+
+html,
+body {
+  background-color: #171616;
+  height          : 100%;
+}
+
+:root {
+  --rose-color  : rgb(228, 0, 114);
+  --black-color : #171616;
+  --dark-color  : #292929;
+  --purple-color: rgb(71, 49, 133);
+}
+
+
+/* cards */
+.uk-card {
+  border-top        : 3px solid var(--rose-color);
+  border-left       : 3px solid var(--rose-color);
+  -webkit-box-shadow: 22px 22px 0px -1px var(--rose-color), 8px 8px 1px 0px var(--purple-color);
+  -moz-shadow       : 22px 22px 0px -1px var(--rose-color), 8px 8px 1px 0px var(--purple-color);
+  box-shadow        : 22px 22px 0px -1px var(--rose-color), 8px 8px 1px 0px var(--purple-color);
+}
+
+.courses>.uk-container>div>div {
+  margin-bottom: 30px;
+}
+
+/* buttons */
+.uk-button-rose {
+  background-color  : var(--rose-color) !important;
+  color             : #fff;
+  -webkit-box-shadow: 4px 4px 0px 1px rgba(155, 18, 83, 0.54), 8px 8px 1px 0px var(--rose-color);
+  -moz-shadow       : 4px 4px 0px 1px rgba(155, 18, 83, 0.54), 8px 8px 1px 0px var(--rose-color);
+  box-shadow        : 4px 4px 0px 1px rgba(155, 18, 83, 0.54), 8px 8px 1px 0px var(--rose-color);
+}
+
+.uk-button-rose:hover {
+  color: #eee;
+}
+
+.uk-button-purple {
+  background-color  : var(--purple-color) !important;
+  color             : #fff;
+  -webkit-box-shadow: 4px 4px 0px 1px rgba(57, 0, 79, 0.54), 8px 8px 1px 0px var(--purple-color);
+  -moz-shadow       : 4px 4px 0px 1px rgba(57, 0, 79, 0.54), 8px 8px 1px 0px var(--purple-color);
+  box-shadow        : 4px 4px 0px 1px rgba(57, 0, 79, 0.54), 8px 8px 1px 0px var(--purple-color);
+}
+
+.uk-button-purple:hover {
+  color: #eee;
+}
+
+.uk-button-circle {
+  border-radius: 500px;
+}
+
+/* sections,divs,grids, containers, blocks etc... */
+section#welcome {
+  margin-top: 3rem;
+}
+
+@media(max-width: 600px) {
+  .uk-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .uk-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .img-logo {
+      width:160px;
+      margin-right: 40px;
+  }
+}
+
+.uk-section-dark,
+.uk-background-dark {
+  background-color: var(--dark-color) !important;
+}
+
+body.site {
+  display       : flex;
+  min-height    : 100vh;
+  flex-direction: column;
+}
+
+main.site-container {
+  flex: 1;
+}
+
+
+/* colors */
+.uk-background-rose {
+  background-color: var(--rose-color);
+}
+
+.uk-text-rose {
+  color: var(--rose-color) !important;
+}
+
+.uk-background-purple {
+  background-color: var(--purple-color);
+}
+
+.uk-text-primary {
+  color: inherit !important;
+}
+
+.uk-text-white {
+  color: #fff;
+}
+
+/* 'play' page */
+
+.downloads a:nth-child(n + 1) {
+  margin-right: 20px;
+}
+
+@media(max-width: 959px) {
+  .downloads a:nth-child(n + 1) {
+      margin-bottom: 20px;
+      width        : 100%;
+  }
+
+  .downloads {
+      text-align   : left !important;
+      margin-bottom: 35px;
+  }
+}
+
+/* footer */
+footer {
+  background-color: var(--rose-color) !important;
+}
+
+footer .sponsor {
+  margin-right: 20px;
+}
+
+/* utils */
+p,
+span,
+h1,
+h2,
+h3,
+ul li {
+  color: #fff;
+}
+
+.uk-active {
+  border-bottom: 3px solid var(--rose-color);
+}
+
+.uk-display-none {
+  display: none !important;
+}
+
+
+/*  navbar  */
+.uk-navbar-nav li {
+  transition-duration: 200ms;
+}
+
+.uk-navbar-nav li:hover {
+  border-bottom: 3px solid var(--rose-color) !important;
+}
+
+.uk-navbar-nav a {
+  font-size: 17px !important;
+}
+
+#offcanvas-nav {
+  padding-top: 10px;
+  text-align : center;
+}
+
+#offcanvas-nav a {
+  font-size    : 20px !important;
+  margin-bottom: 15px;
+}
+
+a.uk-button-rose:active {
+  transform: scale(0.85);
+}
+
+.uk-active a {
+  color: #fff !important;
+}
