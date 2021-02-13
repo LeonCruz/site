@@ -1,0 +1,5 @@
+# ignore directories
+vendor
+.vscode
+
+# ignore files
