@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Negros.dev - </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/core.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="site">
+    <div class="uk-background-secondary">
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-container-xlarge">
+          <nav class="uk-navbar">
+            <div class="uk-navbar-left ">
+              <a
+                class="uk-navbar-toggle uk-hidden@m"
+                uk-navbar-toggle-icon
+                uk-toggle="target: #offcanvas-nav"
+              ></a>
+              <ul class="uk-navbar-nav uk-visible@m">
+                <li class="">
+                  <a href="/">Home</a>
+                </li>
+                <li class="">
+                  <a href="/sobre">Sobre</a>
+                </li>
+                <li>
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Como-Contribuir"
+                  >
+                    Como Contribuir
+                  </a>
+                </li>
+            </div>
+
+            <div class="uk-navbar-right uk-visible@m">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Ajuda"
+                    >Ajuda</a
+                  >
+                </li>
+              </ul>
+              <div class="uk-navbar-item">
+                <a
+                  href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Apoiar"
+                  class="uk-button uk-button-rose"
+                  target="_blank"
+                  >Apoiar!</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-default">
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="">
+              <a href="sobre">Sobre</a>
+            </li>
+            <li>
+              <a
+                class=""
+                target="_blank"
+                href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Como-Contribuir"
+              >
+                Como Contribuir
+              </a>
+            </li>
+            <li>
+              <a
+                class=""
+                target="_blank"
+                href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Ajuda"
+                >Ajuda</a
+              >
+            </li>
+          </ul>
+          <div class="uk-navbar-item">
+            <a
+              href="https://gitlab.com/marcusxyz/negros-dev-core/-/wikis/Apoiar"
+              target="_blank"
+              class="uk-button uk-width-1-1@m uk-button-rose"
+              >Apoiar!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="site-container">
+      <%= yield %>
+    </main>
+  </body>
+</html>
