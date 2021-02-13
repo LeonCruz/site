@@ -15,8 +15,9 @@ gem 'sinatra-contrib', '~> 2.1'
 gem 'bcrypt', '~> 3.1'
 
 
-group :development, :test do
+group :development do
   gem "solargraph", "~> 0.40.3"
+  gem "faker", "~> 2.16.0"
 end
 
 group :development, :test do
