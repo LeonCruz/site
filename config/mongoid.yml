@@ -1,0 +1,6 @@
+testing:
+  clients:
+    default:
+      database: negros_dev_test
+      hosts:
+        - localhost:27017
