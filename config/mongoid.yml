@@ -4,3 +4,9 @@ testing:
       database: negros_dev_test
       hosts:
         - localhost:27017
+development:
+  clients:
+    default:
+      database: negros_dev_dev
+      hosts:
+        - localhost:27017
