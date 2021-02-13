@@ -14,19 +14,21 @@
 <section class="uk-section courses">
   <div class="uk-container uk-container-xlarge">
     <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
-        <div>
-          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="/assistir/curso/">
-              <img 
-                src="=" 
-                class="uk-border-circle" 
-                alt="" 
-                width="80" 
-                height="80" />
-              <p></p>
-            <h1 class="uk-card-title"></h1>
-          </a>
-        </div>
+        <% @courses.each do |course| %>
+          <div>
+            <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+              href="/curso/<%= course.uuid %>">
+                <img 
+                  src="<%= course.user.photo %>" 
+                  class="uk-border-circle" 
+                  alt="<%= course.user.name %>" 
+                  width="80" 
+                  height="80" />
+                <p>  <%= course.user.name %> </p>
+              <h1 class="uk-card-title"> <%= course.name %> </h1>
+            </a>
+          </div>
+        <% end %>
     </div>
   </div>
 </section>

@@ -1,5 +1,6 @@
-class HomeController < ApplicationController
+class HomeController < ApplicationController 
   get '/' do
-    'hello from home controller'
+    @courses = Course.all
+    erb :index, :layout => :base
   end
 end
