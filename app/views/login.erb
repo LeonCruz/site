@@ -1,0 +1,40 @@
+<section class="uk-section" id="welcome">
+  <div class="uk-container uk-container-xlarge">
+    <div uk-grid class="uk-child-width-1-1@m uk-text-center">
+      <div class="uk-light">
+        <img uk-png src="/img/logo.png" alt="" width="250">
+        <div class="uk-margin">
+          <form method="post" method="/login">
+            <div class="uk-margin">
+              <input class="uk-input uk-form-width-large" type="email" name="email" placeholder="Email">
+              <br>
+              <% if session[:error_email] %>
+                <div class="uk-margin-small-top">
+                  <span class="error-message"><%= session[:error_email] %></span>
+                  <% session[:error_email] = nil %>
+                </div>
+              <% end %>
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input uk-form-width-large" type="password" placeholder="Senha" name="password">
+              <% if session[:error_password] %>
+                <div class="uk-margin-small-top">
+                  <span class="error-message"><%= session[:error_password] %></span>
+                  <% session[:error_password] = nil %>
+                </div>
+              <% end %>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-middle">
+              <div class="uk-margin-right">
+                <a class="uk-button uk-button-link" href="">Esqueci a senha</a>
+              </div>
+              <div class="uk-margin-left">
+                <button class="uk-button uk-button-rose" type="submit">Login</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

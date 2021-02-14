@@ -51,6 +51,26 @@
 
             <div class="uk-navbar-right uk-visible@m">
               <ul class="uk-navbar-nav">
+                <% if session[:user] %>
+                  <li class="uk-navbar-item uk-text-bold">
+                    <span>Olá, <%= session[:user].name %></span>
+                  </li>
+                  <li>
+                    <a
+                      id="sair"
+                      href="/sair"
+                      >Sair</a
+                    >
+                  </li>
+                <% else %>
+                  <li>
+                    <a
+                      class=""
+                      href="/entrar"
+                      >Entrar</a
+                    >
+                  </li>
+                <% end %>
                 <li>
                   <a
                     class=""
@@ -91,6 +111,26 @@
                 Como Contribuir
               </a>
             </li>
+            <% if session[:user] %>
+              <li>
+                <span>Olá, <%= session[:user].name %></span>
+              </li>
+              <li>
+                <a
+                  class=""
+                  href="/entrar"
+                  >Sair</a
+                >
+              </li>
+            <% else %>
+              <li>
+                <a
+                  class=""
+                  href="/sair"
+                  >Entrar</a
+                >
+              </li>
+            <% end %>
             <li>
               <a
                 class=""

@@ -192,3 +192,7 @@ a.uk-button-rose:active {
 .uk-active a {
   color: #fff !important;
 }
+
+.error-message {
+  color: #dc3545 !important;
+}
